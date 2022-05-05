@@ -1,0 +1,28 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exer01 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Informe o primeiro número: ");
+		double num1 = input.nextDouble();
+		System.out.print("Informe o segundo número: ");
+		double num2 = input.nextDouble();
+		
+		if(num1 > num2) {
+			System.out.print("Primeiro número é maior: " + num1);
+		} else if (num1 < num2) {
+			System.out.print("Segundo número é maior: " + num2);
+		} else {
+			System.out.print("Os números são iguais");
+		}
+		
+		input.close();
+
+	}
+
+}

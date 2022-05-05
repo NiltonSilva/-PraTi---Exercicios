@@ -1,0 +1,20 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exer03 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+
+		double salarioBruto = 0;
+		double salarioLiquido = 0;
+		
+		System.out.print("Informe o valor do salário bruto: ");
+		salarioBruto = input.nextDouble();
+		input.close();
+
+	}
+
+}

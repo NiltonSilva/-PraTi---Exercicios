@@ -1,0 +1,39 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exer04 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+
+		int codigoAluno;
+		double media;
+		double nota1 = 0;
+		double nota2 = 0;
+		double nota3 = 0;
+		boolean sair = false;
+		
+		
+		do {
+			System.out.print("Informe o código do aluno: ");
+			codigoAluno = input.nextInt();
+			System.out.print("Informe a primeira nota: ");
+			nota1 = input.nextDouble();
+			System.out.print("Informe a segunda nota: ");
+			nota2 = input.nextDouble();
+			System.out.print("Informe a terceira nota: ");
+			nota3 = input.nextDouble();
+			media = (nota1 + nota2 + nota3) / 3;
+			System.out.printf("O aluno de código %d ,teve a média: %.2f", codigoAluno, media);
+			System.out.println();
+			if(codigoAluno == 0) {
+				sair = true;
+			}
+		} while(!sair);
+		input.close();
+
+	}
+
+}

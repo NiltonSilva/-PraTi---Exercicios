@@ -1,0 +1,17 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exer03 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+
+		double salarioBruto = 0;
+		double salarioLiquido = 0;
+		input.close();
+
+	}
+
+}
